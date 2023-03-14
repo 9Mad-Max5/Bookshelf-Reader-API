@@ -64,4 +64,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-migrations/
+
+
+/db_HYDEAI_fork.bak
+.idea/
