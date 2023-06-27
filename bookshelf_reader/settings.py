@@ -12,6 +12,17 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 
+def is_running_in_docker():
+    """Prüft, ob der Code in einem Docker-Container ausgeführt wird."""
+    try:
+        with open('/proc/self/cgroup', 'r') as f:
+            for line in f:
+                if 'docker' in line:
+                    return True
+    except IOError:
+        pass
+    return False
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -19,7 +30,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'piuj%rb3u0)^utqd24(^wp)krvkdb8bzvt^dp8o#(fw)l1h*zc'
+# SECRET_KEY = 'piuj%rb3u0)^utqd24(^wp)krvkdb8bzvt^dp8o#(fw)l1h*zc'
+SECRET_KEY = os.environ.get('SECRET_KEY', 'piuj%rb3u0)^utqd24(^wp)krvkdb8bzvt^dp8o#(fw)l1h*zc')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -126,16 +138,21 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
 ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
+if is_running_in_docker():
+    STATIC_ROOT = "/data"
+else:
+    STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 MEDIA_URL = "/media/"
-MEDIA_ROOT = os.path.join(BASE_DIR, "static_cdn", "media_root")
 
+MEDIA_ROOT = os.path.join(BASE_DIR, "static_cdn", "media_root")
+    
 # Settings for Django Rest Framework
 
 REST_FRAMEWORK = {
