@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import re
 from googlesearch import search
-
+from bookshelf_reader.settings import is_running_in_docker
 
 class BookInfo:
 
@@ -37,11 +37,20 @@ def get_book_info(book_title):
     and returns a BookInfo object containing
     the scrapped information
     '''
-    search_txt = book_title + " book amazon india"
+    if is_running_in_docker:
+        # Future imporvement giving flags with env variables to the container
+        tld="de"
+        search_txt = book_title + " book amazon"
+        domain = "amazon.de"
+
+    else:
+        tld="co.in"
+        search_txt = book_title + " book amazon india"
+        domain = "amazon.in"
 
     book_amazon_link = ""
-    for link in search(search_txt, tld="co.in", num=10, stop=5, pause=2):
-        if "amazon.in" in link and "dp/" in link:
+    for link in search(search_txt, tld=tld, num=10, stop=5, pause=2):
+        if domain in link and "dp/" in link:
             book_amazon_link = link
             break
 

@@ -1,0 +1,462 @@
+{
+  "props": {
+    "pageProps": {
+      "apolloState": {
+        "ROOT_QUERY": {
+          "__typename": "Query",
+          "getAdsTargeting({\"getAdsTargetingInput\":{\"contextual\":{\"legacyId\":\"42879777\",\"legacyResourceType\":\"book\"}}})": {
+            "__typename": "AdsTargeting",
+            "behavioral": null,
+            "contextual": {
+              "__typename": "ContextualTargeting",
+              "resource": "Work_40711050",
+              "tags": ["128289597", "340581714", "578273042", "311730563"],
+              "adult": false
+            }
+          },
+          "getSiteHeaderBanner": {
+            "__typename": "SiteHeaderBanner",
+            "altText": "Discover the Most Popular New Books from the First Half of 2023",
+            "clickthroughUrl": "https://www.goodreads.com/blog/show/2606-readers-hit-books-of-2023-so-far-that-is?ref=HitBooksHalfYear_eb",
+            "desktop1xPhoto": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/siteheaderbannerimages/1685039758i/273.jpg",
+            "desktop2xPhoto": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/siteheaderbannerimages/1685039764i/274.jpg",
+            "mobile1xPhoto": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/siteheaderbannerimages/1685039770i/275.jpg",
+            "mobile2xPhoto": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/siteheaderbannerimages/1685039775i/276.jpg",
+            "siteStripColor": "#ff9d74"
+          },
+          "getBookByLegacyId({\"legacyId\":\"42879777\"})": {
+            "__ref": "Book:kca://book/amzn1.gr.book.v1.vp4032HacoXOrKaoaTApdg"
+          },
+          "getPageBanner({\"getPageBannerInput\":{\"id\":\"kca://book/amzn1.gr.book.v1.vp4032HacoXOrKaoaTApdg\",\"pageName\":\"book_show\"}})": {
+            "__typename": "PageBanner",
+            "type": null,
+            "message": null
+          }
+        },
+        "Contributor:kca://author/amzn1.gr.author.v3.lvDn17w2Qj1IX38p": {
+          "id": "kca://author/amzn1.gr.author.v3.lvDn17w2Qj1IX38p",
+          "__typename": "Contributor",
+          "legacyId": 21012197,
+          "name": "Alex     Miller",
+          "description": "",
+          "isGrAuthor": false,
+          "works": {
+            "__typename": "ContributorWorksConnection",
+            "totalCount": 2
+          },
+          "profileImageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/nophoto/user/u_700x933.png",
+          "webUrl": "https://www.goodreads.com/author/show/21012197.Alex_Miller",
+          "user": null,
+          "viewerIsFollowing": null,
+          "followers": {
+            "__typename": "ContributorFollowersConnection",
+            "totalCount": 1
+          }
+        },
+        "Book:kca://book/amzn1.gr.book.v1.uHZDu2f8kUOq203cg6B4DA": {
+          "id": "kca://book/amzn1.gr.book.v1.uHZDu2f8kUOq203cg6B4DA",
+          "__typename": "Book",
+          "legacyId": 21410612,
+          "webUrl": "https://www.goodreads.com/book/show/21410612-the-black-hole-book"
+        },
+        "Work:kca://work/amzn1.gr.work.v1.U-x1mZ0-W3PJDFr10T-x3w": {
+          "id": "kca://work/amzn1.gr.work.v1.U-x1mZ0-W3PJDFr10T-x3w",
+          "__typename": "Work",
+          "legacyId": 40711050,
+          "bestBook": {
+            "__ref": "Book:kca://book/amzn1.gr.book.v1.uHZDu2f8kUOq203cg6B4DA"
+          },
+          "choiceAwards": [],
+          "details": {
+            "__typename": "WorkDetails",
+            "webUrl": "https://www.goodreads.com/work/40711050-the-black-hole-book",
+            "shelvesUrl": "https://www.goodreads.com/work/shelves/40711050-the-black-hole-book",
+            "publicationTime": 1393833600000,
+            "originalTitle": "",
+            "awardsWon": [],
+            "places": [],
+            "characters": []
+          },
+          "stats": {
+            "__typename": "BookOrWorkStats",
+            "averageRating": 4.67,
+            "ratingsCount": 3,
+            "ratingsCountDist": [0, 0, 0, 1, 2],
+            "textReviewsCount": 0,
+            "textReviewsLanguageCounts": []
+          },
+          "quotes({\"pagination\":{\"limit\":1}})": {
+            "__typename": "ResourceQuotesConnection",
+            "webUrl": "https://www.goodreads.com/work/quotes/40711050",
+            "totalCount": 0
+          },
+          "questions({\"pagination\":{\"limit\":1}})": {
+            "__typename": "ResourceQuestionsConnection",
+            "totalCount": 0,
+            "webUrl": "https://www.goodreads.com/book/21410612/questions"
+          },
+          "topics({\"pagination\":{\"limit\":1}})": {
+            "__typename": "ResourceTopicsConnection",
+            "webUrl": "https://www.goodreads.com/topic/list_book/21410612",
+            "totalCount": 0
+          },
+          "viewerShelvings": null,
+          "viewerShelvingsUrl": "/review/user_works/40711050",
+          "featuredKNH": {
+            "__typename": "FeaturedKNHCollectionConnection",
+            "totalCount": 0,
+            "edges": []
+          },
+          "giveaways": null,
+          "editions": {
+            "__typename": "BooksConnection",
+            "webUrl": "https://www.goodreads.com/work/editions/40711050"
+          }
+        },
+        "Book:kca://book/amzn1.gr.book.v1.vp4032HacoXOrKaoaTApdg": {
+          "id": "kca://book/amzn1.gr.book.v1.vp4032HacoXOrKaoaTApdg",
+          "__typename": "Book",
+          "title": "The Black Hole Book",
+          "titleComplete": "The Black Hole Book",
+          "legacyId": 42879777,
+          "webUrl": "https://www.goodreads.com/book/show/42879777-the-black-hole-book",
+          "description": "The Black Hole Book is your guide to the mysteries of Deep Space in astrological interpretation. These celestial powerhouses are revealed as important formative agents, both in our character and in the events unfolding in the world around us. With extensive interpretive material on Black Hole interaction with each planet that can be applied to the birth chart, supported by detailed examples from celebrity charts and current events, The Black Hole Book also delves into cutting edge astrophysical theory to explain the scientific background on how these energy transducers operate and the effect they have in our lives. Whether amateur or beginning student, novice or seasoned astrological professional, The Black Hole Book offers something for everyone, and opens a window into a dynamic level of celestial functioning underpinning the planetary energies of our solar system. Astrologer Alex Miller has encapsulated more than twenty years of active research and counseling with these anomalies to provide a roadmap to the inner workings of that most elusive of celestial phenomena, the Black Hole.",
+          "description({\"stripped\":true})": "The Black Hole Book is your guide to the mysteries of Deep Space in astrological interpretation. These celestial powerhouses are revealed as important formative agents, both in our character and in the events unfolding in the world around us. With extensive interpretive material on Black Hole interaction with each planet that can be applied to the birth chart, supported by detailed examples from celebrity charts and current events, The Black Hole Book also delves into cutting edge astrophysical theory to explain the scientific background on how these energy transducers operate and the effect they have in our lives. Whether amateur or beginning student, novice or seasoned astrological professional, The Black Hole Book offers something for everyone, and opens a window into a dynamic level of celestial functioning underpinning the planetary energies of our solar system. Astrologer Alex Miller has encapsulated more than twenty years of active research and counseling with these anomalies to provide a roadmap to the inner workings of that most elusive of celestial phenomena, the Black Hole.",
+          "primaryContributorEdge": {
+            "__typename": "BookContributorEdge",
+            "node": {
+              "__ref": "Contributor:kca://author/amzn1.gr.author.v3.lvDn17w2Qj1IX38p"
+            },
+            "role": "Author"
+          },
+          "secondaryContributorEdges": [],
+          "imageUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1543642763i/42879777.jpg",
+          "bookSeries": [],
+          "bookGenres": [],
+          "details": {
+            "__typename": "BookDetails",
+            "asin": "1941408435",
+            "format": "Paperback",
+            "numPages": 282,
+            "publicationTime": 1434870000000,
+            "publisher": "Crossroad Press",
+            "isbn": "1941408435",
+            "isbn13": "9781941408438",
+            "language": { "__typename": "Language", "name": "English" }
+          },
+          "work": {
+            "__ref": "Work:kca://work/amzn1.gr.work.v1.U-x1mZ0-W3PJDFr10T-x3w"
+          },
+          "reviewEditUrl": "https://www.goodreads.com/review/edit/42879777",
+          "featureFlags": {
+            "__typename": "FeatureFlags",
+            "hideAds": false,
+            "noIndex": false,
+            "noNewRatings": false,
+            "noNewTextReviews": false
+          },
+          "viewerShelving": null,
+          "links({})": {
+            "__typename": "BookLinks",
+            "primaryAffiliateLink": {
+              "__typename": "KindleLink",
+              "name": "Amazon",
+              "url": "https://www.amazon.com/gp/product/B00IRRE7J8/ref=x_gr_bb_kindle?caller=Goodreads\u0026tag=x_gr_bb_kindle-20",
+              "ref": "x_gr_bb_kindle",
+              "ebookPrice": "4.99",
+              "kuEligible": false,
+              "primeEligible": false
+            },
+            "secondaryAffiliateLinks": [
+              {
+                "__typename": "BookLink",
+                "name": "Amazon",
+                "url": "http://www.amazon.com/gp/product/1941408435/ref=x_gr_bb_amazon?ie=UTF8\u0026tag=x_gr_bb_amazon-20\u0026linkCode=as2\u0026camp=1789\u0026creative=9325\u0026creativeASIN=1941408435\u0026SubscriptionId=1MGPYB6YW3HWK55XCGG2",
+                "ref": "x_gr_bb_amazon"
+              },
+              {
+                "__typename": "BookLink",
+                "name": "Audible",
+                "url": "https://www.amazon.com/s?k=The+Black+Hole+Book\u0026i=audible\u0026ref=x_gr_w_bb_audible-20\u0026tag=x_gr_w_bb_audible-20",
+                "ref": "x_gr_bb_amazon"
+              },
+              {
+                "__typename": "BookLink",
+                "name": "Barnes \u0026 Noble",
+                "url": "https://www.barnesandnoble.com/w/?ean=9781941408438",
+                "ref": null
+              },
+              {
+                "__typename": "BookLink",
+                "name": "AbeBooks",
+                "url": "http://affiliates.abebooks.com/c/64613/77416/2029?u=http%3A%2F%2Fwww.abebooks.com%2Fservlet%2FSearchResults%3Fisbn%3D1941408435",
+                "ref": null
+              },
+              {
+                "__typename": "BookLink",
+                "name": "Walmart eBooks",
+                "url": "https://click.linksynergy.com/fs-bin/click?id=GwEz7vxblVU\u0026subid=\u0026offerid=361251.1\u0026type=10\u0026tmpid=9309\u0026u1=x_gr_w_bb\u0026RD_PARM1=https%3A%2F%2Fwww.kobo.com%2Fus%2Fen%2Fsearch%3FQuery%3D9781941408438",
+                "ref": null
+              },
+              {
+                "__typename": "BookLink",
+                "name": "Apple Books",
+                "url": "https://geo.itunes.apple.com/us/book/isbn9781941408438?at=11lvdC\u0026mt=11\u0026ls=1",
+                "ref": null
+              },
+              {
+                "__typename": "BookLink",
+                "name": "Google Play",
+                "url": "https://play.google.com/store/search?q=9781941408438\u0026c=books\u0026PCamrefID=bookpage\u0026PAffiliateID=10lHMS",
+                "ref": null
+              },
+              {
+                "__typename": "BookLink",
+                "name": "Alibris",
+                "url": "http://click.linksynergy.com/fs-bin/click?id=GwEz7vxblVU\u0026subid=\u0026offerid=189673.1\u0026type=10\u0026tmpid=939\u0026\u0026u1=x_gr_w_bb\u0026RD_PARM1=http%3A%2F%2Fwww.alibris.com%2Fbooksearch%3Fkeyword%3D1941408435",
+                "ref": null
+              },
+              {
+                "__typename": "BookLink",
+                "name": "Indigo",
+                "url": "https://www.chapters.indigo.ca/en-ca/home/search/?keywords=9781941408438",
+                "ref": null
+              },
+              {
+                "__typename": "BookLink",
+                "name": "Better World Books",
+                "url": "http://www.tkqlhce.com/ob117vpyvpxCFFFKMHLCEDHLGHKECEFMIGDFFHJDDD?url=http%3A%2F%2Fwww.betterworldbooks.com%2FThe+Black+Hole+Book-H0.aspx%3FSearchTerm%3D1941408435",
+                "ref": null
+              },
+              {
+                "__typename": "BookLink",
+                "name": "IndieBound",
+                "url": "https://www.indiebound.org/book/9781941408438",
+                "ref": null
+              },
+              {
+                "__typename": "BookLink",
+                "name": "Thriftbooks",
+                "url": "https://prf.hn/click/camref:1101ljNE7/pubref:1941408435/destination:https://www.thriftbooks.com/browse/?b.search=1941408435",
+                "ref": null
+              }
+            ],
+            "libraryLinks": [
+              {
+                "__typename": "BookLink",
+                "name": "Libraries",
+                "url": "http://www.worldcat.org/isbn/1941408435?loc=",
+                "ref": null
+              }
+            ],
+            "overflowPageUrl": "https://www.goodreads.com/book/42879777-the-black-hole-book/get_a_copy"
+          }
+        }
+      },
+      "apolloClient": null,
+      "authContextParams": {
+        "signedIn": false,
+        "customerId": null,
+        "legacyCustomerId": null,
+        "role": "user"
+      },
+      "userAgentContextParams": {},
+      "userAgent": "python-requests/2.28.2"
+    }
+  },
+  "page": "/book/show/[book_id]",
+  "query": { "book_id": "42879777-the-black-hole-book" },
+  "buildId": "gQuftbRzYUUwHdCTA2UbU",
+  "runtimeConfig": { "env": "Production" },
+  "isFallback": false,
+  "customServer": true,
+  "gip": true,
+  "locales": [
+    "en",
+    "ab",
+    "aa",
+    "af",
+    "ak",
+    "sq",
+    "am",
+    "ar",
+    "an",
+    "hy",
+    "as",
+    "av",
+    "ae",
+    "ay",
+    "az",
+    "bm",
+    "ba",
+    "eu",
+    "be",
+    "bn",
+    "bh",
+    "bi",
+    "bs",
+    "br",
+    "bg",
+    "my",
+    "ca",
+    "ch",
+    "ce",
+    "ceb",
+    "ny",
+    "zh",
+    "zh-TW",
+    "cv",
+    "kw",
+    "co",
+    "cr",
+    "hr",
+    "cs",
+    "da",
+    "dv",
+    "nl",
+    "eo",
+    "et",
+    "ee",
+    "fo",
+    "fj",
+    "fi",
+    "fr",
+    "ff",
+    "gl",
+    "ka",
+    "de",
+    "el",
+    "gn",
+    "gu",
+    "ht",
+    "ha",
+    "he",
+    "hz",
+    "hi",
+    "ho",
+    "hu",
+    "ia",
+    "id",
+    "ie",
+    "ilo",
+    "ga",
+    "ig",
+    "ik",
+    "io",
+    "is",
+    "it",
+    "iu",
+    "ja",
+    "jv",
+    "kl",
+    "kn",
+    "kr",
+    "ks",
+    "kk",
+    "km",
+    "ki",
+    "rw",
+    "ky",
+    "kv",
+    "kg",
+    "ko",
+    "ku",
+    "kj",
+    "la",
+    "lb",
+    "lg",
+    "li",
+    "ln",
+    "lo",
+    "lt",
+    "lu",
+    "lv",
+    "gv",
+    "mk",
+    "mg",
+    "ms",
+    "ml",
+    "mt",
+    "mi",
+    "mr",
+    "mh",
+    "mn",
+    "na",
+    "nv",
+    "nb",
+    "nd",
+    "ne",
+    "new",
+    "ng",
+    "nn",
+    "no",
+    "ii",
+    "nr",
+    "oc",
+    "oj",
+    "cu",
+    "om",
+    "or",
+    "os",
+    "pa",
+    "pi",
+    "fa",
+    "pl",
+    "ps",
+    "pt",
+    "qu",
+    "rm",
+    "rn",
+    "ro",
+    "ru",
+    "sa",
+    "sc",
+    "sd",
+    "se",
+    "sm",
+    "sg",
+    "sr",
+    "gd",
+    "sn",
+    "si",
+    "sk",
+    "sl",
+    "so",
+    "st",
+    "es",
+    "su",
+    "sw",
+    "ss",
+    "sv",
+    "ta",
+    "te",
+    "tg",
+    "th",
+    "ti",
+    "bo",
+    "tk",
+    "tl",
+    "tn",
+    "to",
+    "tr",
+    "ts",
+    "tt",
+    "tw",
+    "ty",
+    "ug",
+    "uk",
+    "ur",
+    "uz",
+    "ve",
+    "vi",
+    "vo",
+    "wa",
+    "cy",
+    "wo",
+    "fy",
+    "xh",
+    "yi",
+    "yo",
+    "za"
+  ]
+}
